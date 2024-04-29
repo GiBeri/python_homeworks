@@ -22,16 +22,20 @@ class Bank_Account:
     
 account1 = Bank_Account(input("enter your fullname:") )
 
-print(f"hello {account1.get_account_name()}, your current balance is {account1.get_balance()}")
+def main():
+    print(f"hello {account1.get_account_name()}, your current balance is {account1.get_balance()}")
 
-def money():
-    x = input("enter 0 to deposit, enter 1 to withdraw: ")
-    if x == "0":
-        account1.deposit(int(input("enter amount to deposit: ")))
-        print(f"successfully deposited to your account, your current balance is {account1.get_balance()}")
-    elif x == "1":
-        account1.withdraw(int(input("enter amount to withdraw: ")))
-        print(f"successfully withdrew to your account, your current balance is {account1.get_balance()}")
+    def money():
+        x = input("enter 0 to deposit, enter 1 to withdraw: ")
+        if x == "0":
+            account1.deposit(int(input("enter amount to deposit: ")))
+            print(f"successfully deposited to your account, your current balance is {account1.get_balance()}")
+        elif x == "1":
+            account1.withdraw(int(input("enter amount to withdraw: ")))
+            print(f"successfully withdrew to your account, your current balance is {account1.get_balance()}")
 
-while True:
-    money()
+    while True:
+        money()
+
+if __name__ == "__main__":
+    main()
