@@ -1,0 +1,30 @@
+class Celsius:
+    def __init__(self, __temperature) -> None:
+        self.__temperature = __temperature
+    
+    def get_temp(self):
+        return self.__temperature
+
+    def set_temp(self,  temp):
+        self.__temperature = temp
+
+    def del_temp(self):
+        del self.__temperature
+
+    temperatue = property(get_temp, set_temp, del_temp)
+
+def main():
+    obj1 = Celsius(30)
+    obj2 = Celsius(25)
+
+    print(obj1.temperatue)
+    obj1.temperatue = 35
+    print(obj1.temperatue)
+    print(obj2.temperatue)
+    del obj2.temperatue
+
+if __name__ == "__main__":
+    main()
+
+
+
