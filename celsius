@@ -1,6 +1,6 @@
 class Celsius:
-    """class for temperature
-    """
+    """class for temperature"""
+
     def __init__(self, __temperature: int) -> None:
         self.__temperature = __temperature
 
@@ -18,8 +18,7 @@ class Celsius:
         self.__temperature = temperature
 
     def del_temp(self) -> None:
-        """delete temperature
-        """
+        """delete temperature"""
 
         del self.__temperature
 
