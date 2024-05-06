@@ -1,4 +1,10 @@
 class People:
+    """
+    The code defines classes for People, Lecturer, and Student
+    with methods to get their email addresses
+    and demonstrates their usage in the main function.
+    """
+
     def __init__(self, firstname: str, lastname: str) -> None:
         self.firstname = firstname
         self.lastname = lastname
